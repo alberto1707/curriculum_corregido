@@ -71,6 +71,7 @@ body{
 .contacto a:hover{ 
   text-decoration: underline; 
 }
+
 a:focus-visible, .boton:focus-visible {
   outline: 2px dashed var(--acento);
   outline-offset: 4px;
@@ -92,8 +93,10 @@ a:focus-visible, .boton:focus-visible {
   padding-block: 1rem 2rem;
 }
 @media (min-width: 720px){
-  .cuadricula{ grid-template-columns: repeat(2, 1fr); }
-  .cuadricula > .tarjeta:first-child{ grid-column: 1 / -1; }
+  .cuadricula > .tarjeta:first-child,
+  .cuadricula > .tarjeta:last-child {
+    grid-column: 1 / -1;
+  }
 }
 @media (min-width: 1024px) {
   .titulo { font-size: 2.5rem; }
