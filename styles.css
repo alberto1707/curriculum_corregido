@@ -71,6 +71,10 @@ body{
 .contacto a:hover{ 
   text-decoration: underline; 
 }
+a:focus-visible, .boton:focus-visible {
+  outline: 2px dashed var(--acento);
+  outline-offset: 4px;
+}         
 
 .cuadricula{
   display: grid;
