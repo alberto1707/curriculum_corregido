@@ -82,6 +82,11 @@ body{
   .cuadricula{ grid-template-columns: repeat(2, 1fr); }
   .cuadricula > .tarjeta:first-child{ grid-column: 1 / -1; }
 }
+@media (min-width: 1024px) {
+  .titulo { font-size: 2.5rem; }
+  .contenedor { padding: 2rem; }
+  .cuadricula { grid-template-columns: repeat(3, 1fr); }
+}
 
 .tarjeta{
   background: linear-gradient(180deg, rgba(17,24,39,.9), rgba(17,24,39,.8));
