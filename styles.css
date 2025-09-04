@@ -74,7 +74,16 @@ body{
 a:focus-visible, .boton:focus-visible {
   outline: 2px dashed var(--acento);
   outline-offset: 4px;
-}         
+}     
+.boton:hover {
+  filter: brightness(1.1);
+}
+.boton:active {
+  transform: scale(.97);
+} 
+.boton, .contacto a {
+  transition: all .2s ease-in-out;
+}   
 
 .cuadricula{
   display: grid;
@@ -89,7 +98,7 @@ a:focus-visible, .boton:focus-visible {
 @media (min-width: 1024px) {
   .titulo { font-size: 2.5rem; }
   .contenedor { padding: 2rem; }
-  .cuadricula { grid-template-columns: repeat(3, 1fr); }
+  .cuadricula { grid-template-columns: repeat(2, 1fr); }
 }
 
 .tarjeta{
@@ -100,6 +109,17 @@ a:focus-visible, .boton:focus-visible {
   padding: 1rem;
 }
 .tarjeta h2{ 
+  margin-top: 0; 
+  letter-spacing: .3px; 
+}
+.tarjeta-experiencia{
+  background: linear-gradient(180deg, rgba(17,24,39,.9), rgba(17,24,39,.8));
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  box-shadow: var(--sombra);
+  padding: 1rem;
+}
+.tarjeta-experiencia h2{ 
   margin-top: 0; 
   letter-spacing: .3px; 
 }
